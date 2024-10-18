@@ -37,7 +37,7 @@ function HomePage({ setEncryptionKey }) {
     <div>
 <header className="header">
   <div className="logo-box">
-    <img src="/assets/vcode-removebg-preview (1).png" alt="Your Logo" className="logo" />  {/* Replace with your logo */}
+    <img src={`${process.env.PUBLIC_URL}/assets/vcode-removebg-preview (1).png`} alt="Your Logo" className="logo" />  {/* Replace with your logo */}
   </div>
   <p>The fastest way to save notes anywhere</p>
   <div className="input-container">
@@ -63,17 +63,17 @@ function HomePage({ setEncryptionKey }) {
       <section className="features-section">
         <h2>Features</h2>
         <div className="feature">
-          <img src="/assets/no_acc-removebg-preview.png" alt="No Accounts" />
+          <img src={`${process.env.PUBLIC_URL}/assets/no_acc-removebg-preview.png`} alt="No Accounts" />
           <h3>No Accounts</h3>
           <p>Start sharing files and notes, no need to sign up.</p>
         </div>
         <div className="feature">
-          <img src="/assets/secure-removebg-preview.png" alt="Only You Can Read" />
-          <h3>Only You Can Read</h3>
+          <img src={`${process.env.PUBLIC_URL}/assets/secure-removebg-preview.png`} alt="Only You Can Read" />
+         <h3>Only You Can Read</h3>
           <p>Your Files and codes are encrypted with your unique code.</p>
         </div>
         <div className="feature">
-          <img src="/assets/upload-removebg-preview.png" alt="The Technology" />
+          <img src={`${process.env.PUBLIC_URL}/assets/upload-removebg-preview.png`} alt="The Technology" />
           <h3>The Technology</h3>
           <p>All File types able to shared and stored securely.</p>
         </div>
@@ -83,7 +83,7 @@ function HomePage({ setEncryptionKey }) {
       <section className="technology-section">
         <h2>The Technology Behind</h2>
         <p>We use AES encryption to ensure your notes are safe...</p>
-        <img src="/assets/encry-removebg-preview.png" alt="Encryption" />
+        <img src={`${process.env.PUBLIC_URL}/assets/encry-removebg-preview.png`} alt="Encryption" />
       </section>
 
       {/* Sharing Section */}
