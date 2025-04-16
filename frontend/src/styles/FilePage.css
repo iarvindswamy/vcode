@@ -140,40 +140,14 @@ li button {
 }
 
 
-/* Mobile view adjustments */
-@media screen and (max-width: 768px) {
+/* Responsive layout for mobile devices */
+@media (max-width: 768px) {
   .file-page {
-    flex-direction: column; /* Already vertical, matches desktop */
-    padding: 10px;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .left-side, .right-side {
-    width: 100%; /* Already full width */
-    padding: 15px;
-  }
-
-  textarea {
-    height: 150px; /* Already matches desktop */
-  }
-
-  .buttons {
-    flex-direction: column; /* Already vertical */
-    gap: 10px;
-  }
-
-  button {
-    width: 100%; /* Full-width buttons */
-    padding: 12px;
-  }
-
-  .right-side input[type="file"] {
-    margin: 15px 0;
-  }
-
-  ul li {
-    flex-direction: row; /* Keep list items in row for file entries */
-    align-items: center;
+    width: 100%;
   }
 }
-
