@@ -138,3 +138,42 @@ li button {
 .close-page-button:hover {
   color: #4169E1;
 }
+
+
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+  .file-page {
+    flex-direction: column; /* Stack boxes vertically in mobile view */
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .left-side, .right-side {
+    width: 100%; /* Full width for both sides */
+    padding: 15px;
+  }
+
+  textarea {
+    height: 150px; /* Slightly smaller textarea for mobile */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  button {
+    width: 100%; /* Full-width buttons */
+    padding: 12px;
+  }
+
+  .right-side input[type="file"] {
+    margin: 15px 0;
+  }
+
+  ul li {
+    flex-direction: row; /* Keep list items in row */
+    align-items: center;
+  }
+}
