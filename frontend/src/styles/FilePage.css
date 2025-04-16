@@ -143,22 +143,22 @@ li button {
 /* Mobile view adjustments */
 @media screen and (max-width: 768px) {
   .file-page {
-    flex-direction: column; /* Stack boxes vertically: left-side (Notepad) at top, right-side (Files) at bottom */
+    flex-direction: column; /* Already vertical, matches desktop */
     padding: 10px;
     gap: 10px;
   }
 
   .left-side, .right-side {
-    width: 100%; /* Full width for both sides */
+    width: 100%; /* Already full width */
     padding: 15px;
   }
 
   textarea {
-    height: 150px; /* Slightly smaller textarea for mobile */
+    height: 150px; /* Already matches desktop */
   }
 
   .buttons {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; /* Already vertical */
     gap: 10px;
   }
 
@@ -176,3 +176,4 @@ li button {
     align-items: center;
   }
 }
+
