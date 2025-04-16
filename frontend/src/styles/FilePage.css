@@ -140,11 +140,10 @@ li button {
 }
 
 
-
 /* Mobile view adjustments */
 @media screen and (max-width: 768px) {
   .file-page {
-    flex-direction: column; /* Stack boxes vertically in mobile view */
+    flex-direction: column; /* Stack boxes vertically: left-side (Notepad) at top, right-side (Files) at bottom */
     padding: 10px;
     gap: 10px;
   }
@@ -173,7 +172,7 @@ li button {
   }
 
   ul li {
-    flex-direction: row; /* Keep list items in row */
+    flex-direction: row; /* Keep list items in row for file entries */
     align-items: center;
   }
 }
